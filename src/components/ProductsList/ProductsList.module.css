@@ -1,0 +1,149 @@
+.products {
+    margin-bottom: 60px;
+}
+.productCard {
+    width: 280px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.productCard:hover {
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+.productPhoto {
+    width: 100%;
+    height: 284px;
+    margin-bottom: 27px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;  
+    position: relative;
+}
+
+.productPhoto img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.addToCard {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-in;
+}
+.addToCard img {
+    object-fit: cover;
+}
+
+.addToCard:hover {
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+}
+
+.brandName {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a77d2;
+    line-height: 1.56;
+    letter-spacing: 0.5px;
+    display: block;
+    text-decoration: none;
+}
+.productTitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.56;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+    height: 50px;
+}
+
+.productRating {
+    margin-bottom: 21px;
+    display: block;
+}
+
+.raiting {
+    margin-right: 10px;
+}
+.recomendation {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #333333;
+    opacity: 0.5;
+}
+.productCardBottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.priceWrap {
+    margin-bottom: 5px;
+    display: block;
+}
+.price {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: #333333;
+}
+
+.value {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #333333;
+    padding-left: 6px;
+}
+.available {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #43a047;
+}
+
+.onOrder {
+    color: #333333;
+  
+}
+.buyBtn {
+    background-color: #1a77d2;
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .productPhoto {
+        width: 200px;
+        height: 219px;
+        /* object-fit: cover; */
+    }
+    .productPhoto:hover {
+        box-shadow: none;
+    }
+}

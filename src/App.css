@@ -1,0 +1,31 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 70px 73px;
+}
+.section-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.products {
+    display: flex;
+}
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 30px 27px;
+    }
+    .section-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+}
