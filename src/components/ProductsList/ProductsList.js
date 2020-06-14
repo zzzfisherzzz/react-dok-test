@@ -8,7 +8,7 @@ import Card from './Card.js'
 const ProductsList = ({cards}) => {
   return (
     <Slider {...sliderSettings} className={styles.products}>
-      {cards.map(({ brand_name, product_title, available, rating, url_direct, rating_count,  price, product_image_alt }, product_id) => (
+      {cards.sort(() => Math.random() - 0.5 ).map(({ brand_name, product_title, available, rating, url_direct, rating_count,  price, product_image_alt }, product_id) => (
           <Card 
               product_id={product_id} 
               brand_name={brand_name} 

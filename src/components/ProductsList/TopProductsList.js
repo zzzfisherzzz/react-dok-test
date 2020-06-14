@@ -8,7 +8,7 @@ import Card from './Card.js'
 const TopProductsList = ({cards}) => {
   return (
     <Slider {...sliderSettings} className={styles.products}>
-      {cards.filter(product => product.rating_count > 0).map(({ brand_name, product_title, available, rating, url_direct, rating_count,  price, product_image_alt }, product_id) => (
+      {cards.map(({ brand_name, product_title, available, rating, url_direct, rating_count,  price, product_image_alt }, product_id) => (
             <Card 
                 product_id={product_id} 
                 brand_name={brand_name} 
